@@ -1,8 +1,10 @@
+module Main where
+
 --
 -- Yolo
 -- Molo
 --
-import System.Environment
+import System.Environment ( getArgs )
 
 -- / 'main'
 main :: IO()
