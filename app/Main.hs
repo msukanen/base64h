@@ -2,9 +2,7 @@ module Main where
 
 --
 -- Yolo
--- Molo
 --
-import System.Environment ( getArgs )
 import Base64 (encode, decode)
 
 x64 :: String
