@@ -1,10 +1,9 @@
 module Base64 (encode, decode) where
 
-import Data.Bits ( Bits((.&.), shiftL, shiftR) )
+import Data.Bits (Bits((.&.), shiftL, shiftR))
 import Data.Char (ord, chr)
 import Data.List (elemIndex)
-import Data.Maybe ( fromJust )
-import GHC.Word (leWord32)
+import Data.Maybe (fromJust)
 
 chops :: Int -> [e] -> [[e]]
 chops i ls = map (take i) (build (split ls)) where
